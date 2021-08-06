@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>GDrive File Direct Download LInk Generator</title>
+</head>
+<body>
+    <div class="main d-flex justify-content-center align-items-center">
+        <div class="Secondary">
+            <h4>I can Generate Direct Download Link From Google Drive Link [Only File - Folder isn't Supported]</h4>
+            <p>Give Me a Google Drive File Link</p>
+            <form action="" onsubmit="return false">
+                <input id="input" type="text" placeholder="Enter A GDrive Link">
+            </form>
+            <button class="submit" onclick="generateDirectDl()">Generate</button>
+            <div class="result-field">
+                <p class="result-text"><code id="result"></code></p>
+            </div>
+            <div class="copy-field">
+                <button class="copy" id="copy-btn" onclick="copy()" onmouseout="outFunc()"><span class="hovertext" id="myHoverText">Copy to clipboard</span>Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
