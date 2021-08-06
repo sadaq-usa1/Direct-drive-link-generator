@@ -21,7 +21,7 @@ function generateDirectDl(){
 
         
     }
-    if(inputLink != "" && splitedLinks.indexOf("folder") == -1 && splitedLinks.indexOf("folders") == -1 || splitedLinks.indexOf("folderview") == -1 ){
+    if(inputLink != "" && splitedLinks.indexOf("folder") == -1 && splitedLinks.indexOf("folders") == -1 && splitedLinks.indexOf("folderview") == -1 ){
         //Counting Splited link's arrays length 
         let countSplitedLinks = splitedLinks.map(count => count.length);
 
