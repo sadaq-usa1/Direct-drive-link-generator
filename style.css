@@ -20,7 +20,7 @@ p{
     color: rgb(228, 228, 228);
 }
 input{
-    padding: 0 5px;
+    padding: 0 10px;
     width: 95%;
     height: 2rem;
     margin-bottom: .8rem;
@@ -34,6 +34,7 @@ button{
     color: white;
     transition: all ease-in-out 250ms;
     background-color: transparent;
+    border-radius: 3px;
 
 }
 .submit{
