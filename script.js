@@ -1,28 +1,37 @@
+
 function generateDirectDl(){
-    // Selecting Input Field and Getting value
     var inputLink = document.getElementById('input').value;
 
 
-    // Spliting link into wordblock and joining by "/"
-    var modifiedLink = inputLink.split("/").join("/").split("=").join("/").split("&").join("/").split('?').join("/");
+    var trimedLink = inputLink.trim();
 
-    // spliting modified link into an array
-    var splitedLinks = modifiedLink.split("/");
+    if(trimedLink == ""){
 
-    // Cheching If Folder word is in link and so block that 
-    if(splitedLinks.indexOf("folder") != -1 || splitedLinks.indexOf("folders") != -1 || splitedLinks.indexOf("folderview") != -1 ){
+        var result = document.getElementById('result').innerText = `Enter Link First`;
 
-        document.getElementById('result').innerText = `Folder Detected`;
-        
-        
+        return result;
     }
-    if(inputLink == ""){
-        document.getElementById('result').innerText = `Enter Link First`;
 
-        
+    if( trimedLink.search(/HTTP/gi) == -1 || trimedLink.search(/DRIVE/gi) == -1 ){
+
+        var result = document.getElementById('result').innerText = `Enter A Valid Google Drive File Link`;
+
+        return result;
     }
-    if(inputLink != "" && splitedLinks.indexOf("folder") == -1 && splitedLinks.indexOf("folders") == -1 && splitedLinks.indexOf("folderview") == -1 ){
-        //Counting Splited link's arrays length 
+    
+    if( trimedLink.search(/FOLDER/gi) != -1 ){
+
+        var result = document.getElementById('result').innerText = `Folder Isn't Supported`;
+
+        return result;
+    }
+    else{
+
+        var modifiedLink = trimedLink.split("/").join("/").split("=").join("/").split("&").join("/").split('?').join("/");
+
+        var splitedLinks = modifiedLink.split("/");
+
+        // Counting Splited link's arrays length 
         let countSplitedLinks = splitedLinks.map(count => count.length);
 
         // Counting Drive ID's Index from array which has maximum words
@@ -33,14 +42,13 @@ function generateDirectDl(){
 
         document.getElementById("copy-btn").style.display = "block";
 
-        // Showing Result
-        // var result = document.getElementById('result').innerText = `https://drive.google.com/uc?export=download&id=${driveId}`;
-
         var result = document.getElementById('result').innerHTML = `<form><input id="result-box" type="text" value="https://drive.google.com/uc?export=download&id=${driveId}"></form>`;
+        
+        return result;
     }
 
-
 }
+
 
 
 function copy() {
