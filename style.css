@@ -69,7 +69,7 @@ input:nth-child(1){
         width: 75%;
     }
     footer{
-        bottom: 0;
+        bottom: -2%;
     }
 }
 
