@@ -114,6 +114,7 @@ input:nth-child(1){
   }
 
 footer{
+    margin-bottom: 2%;
     width: 100vw;
     display: flex;
     justify-content: center;
