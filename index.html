@@ -11,19 +11,21 @@
     <title>GDrive File Direct Download LInk Generator</title>
 </head>
 <body>
-    <div class="main d-flex justify-content-center align-items-center">
-        <div class="Secondary">
-            <h4>I can Generate Direct Download Link From Google Drive Link [Only File - Folder isn't Supported]</h4>
-            <p>Give Me a Google Drive File Link</p>
-            <form action="" onsubmit="return false">
-                <input id="input" type="text" placeholder="Enter A Google Drive Link">
-            </form>
-            <button class="submit" onclick="generateDirectDl()">Generate</button>
-            <div class="result-field">
-                <p class="result-text"><code id="result"></code></p>
-            </div>
-            <div class="copy-field">
-                <button class="copy" id="copy-btn" onclick="copy()" onmouseout="outFunc()"><span class="hovertext" id="myHoverText">Copy to clipboard</span>Copy</button>
+    <div class="container">
+        <div class="main d-flex justify-content-center align-items-center">
+            <div class="Secondary">
+                <h4>I can Generate Direct Download Link From Google Drive Link [Only File - Folder isn't Supported]</h4>
+                <p>Give Me a Google Drive File Link</p>
+                <form action="" onsubmit="return false">
+                    <input id="input" type="text" placeholder="Enter A Google Drive Link">
+                </form>
+                <button class="submit" onclick="generateDirectDl()">Generate</button>
+                <div class="result-field">
+                    <p class="result-text"><code id="result"></code></p>
+                </div>
+                <div class="copy-field">
+                    <button class="copy" id="copy-btn" onclick="copy()" onmouseout="outFunc()"><span class="hovertext" id="myHoverText">Copy to clipboard</span>Copy</button>
+                </div>
             </div>
         </div>
     </div>

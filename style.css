@@ -3,12 +3,16 @@ body{
     padding: 0;
     background-color: #232323;
     color: white;
+
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
 .main{
     background-color: #555454;
@@ -108,10 +112,14 @@ input:nth-child(1){
   }
 
 footer{
+    width: 100vw;
      position: absolute;
      bottom: 2%;
+     display: flex;
+     justify-content: center;
 }
 footer a:link {
+    display: block;
     color: rgb(214, 214, 214);
     background-color: transparent;
     text-decoration: none;
