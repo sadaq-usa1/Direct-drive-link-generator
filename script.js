@@ -12,7 +12,7 @@ function generateDirectDl(){
         return result;
     }
 
-    if( trimedLink.search(/HTTP/gi) == -1 || trimedLink.search(/DRIVE/gi) == -1 ){
+    if( trimedLink.search(/HTTP/gi) == -1 || trimedLink.search(/DRIVE/gi) == -1 || trimedLink.search(/COM/gi) == -1  ){
 
         var result = document.getElementById('result').innerText = `Enter A Valid Google Drive File Link`;
 
