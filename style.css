@@ -8,7 +8,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 .container{
-    height: 100vh;
+    height: 98vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -68,8 +68,8 @@ input:nth-child(1){
     .main{
         width: 75%;
     }
-    footer{
-        bottom: -2%;
+    .container{
+        height: 96vh;
     }
 }
 
@@ -115,8 +115,6 @@ input:nth-child(1){
 
 footer{
     width: 100vw;
-    position: absolute;
-    bottom: 2%;
     display: flex;
     justify-content: center;
 }
