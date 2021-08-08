@@ -10,7 +10,7 @@ function generateDirectDl(){
     var splitedLinks = modifiedLink.split("/");
 
     // Cheching If Folder word is in link and so block that 
-    if(splitedLinks.indexOf(/folder/i) != -1 || splitedLinks.indexOf(/folders/i) != -1 || splitedLinks.indexOf(/folderview/i) != -1 ){
+    if(splitedLinks.indexOf("folder") != -1 || splitedLinks.indexOf("folders") != -1 || splitedLinks.indexOf("folderview") != -1 ){
 
         document.getElementById('result').innerText = `Folder Detected`;
         
@@ -21,7 +21,7 @@ function generateDirectDl(){
 
         
     }
-    if(inputLink != "" && splitedLinks.indexOf(/folder/i) == -1 && splitedLinks.indexOf(/folders/i) == -1 && splitedLinks.indexOf(/folderview/i) == -1 ){
+    if(inputLink != "" && splitedLinks.indexOf("folder") == -1 && splitedLinks.indexOf("folders") == -1 && splitedLinks.indexOf("folderview") == -1 ){
         //Counting Splited link's arrays length 
         let countSplitedLinks = splitedLinks.map(count => count.length);
 
