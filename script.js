@@ -7,7 +7,7 @@ function generateDirectDl(){
 
     function checkDriveId(splitedLinks){
 
-        return splitedLinks.length > 25;
+        return splitedLinks.length > 25 && splitedLinks.length < 50;
     }
 
     if(trimedLink == ""){
