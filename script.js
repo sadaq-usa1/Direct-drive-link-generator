@@ -5,6 +5,11 @@ function generateDirectDl(){
 
     var trimedLink = inputLink.trim();
 
+    function checkDriveId(splitedLinks){
+
+        return splitedLinks.length > 20;
+    }
+
     if(trimedLink == ""){
 
         var result = document.getElementById('result').innerText = `Enter Link First`;
@@ -31,14 +36,7 @@ function generateDirectDl(){
 
         var splitedLinks = modifiedLink.split("/");
 
-        // Counting Splited link's arrays length 
-        let countSplitedLinks = splitedLinks.map(count => count.length);
-
-        // Counting Drive ID's Index from array which has maximum words
-        var driveIdIndex = countSplitedLinks.indexOf(Math.max(...countSplitedLinks));
-
-        // Getting the drive Id using Index 
-        var driveId = splitedLinks[driveIdIndex];
+        var driveId = splitedLinks.filter(checkDriveId);
 
         document.getElementById("copy-btn").style.display = "block";
 
