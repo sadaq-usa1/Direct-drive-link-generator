@@ -58,7 +58,7 @@ function copy() {
     copyText.setSelectionRange(0, 99999); /* For mobile devices */
   
     /* Copy the text inside the text field */
-    document.execCommand("copy");
+    document.execCommand("Copy");
   
     /* Alert the copied text */
     var tooltip = document.getElementById("myHoverText");
