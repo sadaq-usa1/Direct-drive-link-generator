@@ -1,5 +1,5 @@
 ### Hi there, I'm Gdrive Direct Link Generator👋
-### [![Powered By](https://img.shields.io/badge/POWERED-BY--NOBITA-red?logo=success&style=for-the-badge&logo)](https://t.me/obita_o)
+### [![Powered By](https://img.shields.io/badge/POWERED-BY--NOBITA-red?logo=success&style=for-the-badge&logo)](https://t.me/nobita_o)
 
 #
 
